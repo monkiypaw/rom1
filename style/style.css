@@ -1,22 +1,120 @@
-body,
-html,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.hero {
-    display: flex;
-    justify-content: center;
-    gap: 115px;
-}
-
-h1 {
-    color: blueviolet;
-}
+    body,
+    html,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: rgb(250, 250, 250);
+        background-image: url(../image/123.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1120px;
+        height: 100%;
+    }
+    
+    @font-face {
+        font-family: 'Mukta-Light';
+        src: url(../fonts/Mukta-Light.woff2) format(woff2);
+        font-style: normal;
+        font-weight: 300;
+    }
+    
+    @font-face {
+        font-family: 'Mukta-Regular';
+        src: url(../fonts/Mukta-Regular.woff2) format(woff2);
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    @font-face {
+        font-family: 'Mukta-Bold';
+        src: url(../fonts/Mukta-Bold.woff2) format(woff2);
+        font-style: normal;
+        font-weight: 700;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .hero {
+        display: flex;
+        justify-content: center;
+        gap: 115px;
+        align-items: center;
+    }
+    
+    .hero>img {
+        border-radius: 30px;
+        box-shadow: 10px;
+    }
+    
+    header {
+        margin-bottom: 70px;
+    }
+    
+    .about {
+        width: 400px;
+        background: linear-gradient( rgb(26, 164, 219), rgb(238, 239, 240));
+        border-radius: 10px;
+    }
+    
+    .surname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    p {
+        font-family: 'Mukta-Light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    h1 {
+        color: rgb(12, 14, 15);
+        font-family: 'Mukta-Bold', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+    }
+    
+    .skills {
+        display: flex;
+        justify-content: center;
+        gap: 115px;
+        align-items: flex-start;
+    }
+    
+    .personal {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .personal>ul {
+        background: linear-gradient( rgb(26, 164, 219), rgb(238, 239, 240));
+        border-radius: 10px;
+        ;
+    }
+    
+    .personal>h2 {}
+    
+    .personal h2::after {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: black;
+    }
+    
+    .exam {
+        background: linear-gradient( rgb(26, 164, 219), rgb(238, 239, 240));
+        border-radius: 10px;
+    }
