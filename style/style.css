@@ -13,6 +13,7 @@
         background-position: center;
         background-size: 1120px;
         height: 100%;
+        background-attachment: scroll;
     }
     
     @font-face {
@@ -43,13 +44,12 @@
     .hero {
         display: flex;
         justify-content: center;
-        gap: 115px;
-        align-items: center;
+        gap: 155px;
     }
     
     .hero>img {
         border-radius: 30px;
-        box-shadow: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     }
     
     header {
@@ -58,7 +58,7 @@
     
     .about {
         width: 400px;
-        background: linear-gradient( rgb(26, 164, 219), rgb(238, 239, 240));
+        background: linear-gradient( rgb(19, 178, 241), rgb(238, 239, 240));
         border-radius: 10px;
     }
     
@@ -68,8 +68,8 @@
         justify-content: center;
     }
     
-    p {
-        font-family: 'Mukta-Light';
+    p li {
+        font-family: 'Mukta-Light', sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -81,6 +81,22 @@
         font-style: normal;
         font-weight: 700;
         font-size: 34px;
+    }
+    
+    h2 {
+        color: rgb(12, 14, 15);
+        font-family: 'Mukta-Bold', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    
+    h3 {
+        color: rgb(12, 14, 15);
+        font-family: 'Mukta-Bold', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
     }
     
     .skills {
@@ -98,7 +114,7 @@
     }
     
     .personal>ul {
-        background: linear-gradient( rgb(26, 164, 219), rgb(238, 239, 240));
+        background: linear-gradient( rgb(101, 183, 216), rgb(238, 239, 240));
         border-radius: 10px;
         ;
     }
@@ -114,7 +130,18 @@
         background-color: black;
     }
     
+    .education h2::after {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: black;
+    }
+    
     .exam {
-        background: linear-gradient( rgb(26, 164, 219), rgb(238, 239, 240));
+        background: linear-gradient( rgb(115, 198, 231), rgb(238, 239, 240));
         border-radius: 10px;
     }
+    
+    main {}
